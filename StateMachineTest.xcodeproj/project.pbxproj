@@ -14,6 +14,12 @@
 		BDB7CC8F22958E9500D4060C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB7CC8D22958E9500D4060C /* LaunchScreen.storyboard */; };
 		BDB7CC9A22958E9500D4060C /* StateMachineTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7CC9922958E9500D4060C /* StateMachineTestTests.swift */; };
 		BDB7CCA522958E9500D4060C /* StateMachineTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7CCA422958E9500D4060C /* StateMachineTestUITests.swift */; };
+		BDB7CCB322958EB500D4060C /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7CCB222958EB500D4060C /* StateMachine.swift */; };
+		BDB7CCB522958F5700D4060C /* NetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7CCB422958F5700D4060C /* NetworkDataSource.swift */; };
+		BDB7CCB72295928E00D4060C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7CCB62295928E00D4060C /* ViewModel.swift */; };
+		BDB7CCBB2295E31900D4060C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7CCBA2295E31900D4060C /* DataSource.swift */; };
+		BDB7CCBD2295E34000D4060C /* LoadableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7CCBC2295E34000D4060C /* LoadableDataSource.swift */; };
+		BDB7CCC32296F16F00D4060C /* NetworkingDataSourceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7CCC22296F16F00D4060C /* NetworkingDataSourceObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		BDB7CCA022958E9500D4060C /* StateMachineTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StateMachineTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB7CCA422958E9500D4060C /* StateMachineTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachineTestUITests.swift; sourceTree = "<group>"; };
 		BDB7CCA622958E9500D4060C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB7CCB222958EB500D4060C /* StateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		BDB7CCB422958F5700D4060C /* NetworkDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataSource.swift; sourceTree = "<group>"; };
+		BDB7CCB62295928E00D4060C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		BDB7CCBA2295E31900D4060C /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		BDB7CCBC2295E34000D4060C /* LoadableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableDataSource.swift; sourceTree = "<group>"; };
+		BDB7CCC22296F16F00D4060C /* NetworkingDataSourceObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingDataSourceObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 			children = (
 				BDB7CC8422958E9400D4060C /* AppDelegate.swift */,
 				BDB7CC8622958E9400D4060C /* ViewController.swift */,
+				BDB7CCB62295928E00D4060C /* ViewModel.swift */,
+				BDB7CCBF2295E57300D4060C /* StateMachine */,
+				BDB7CCBE2295E56200D4060C /* DataSource */,
 				BDB7CC8822958E9400D4060C /* Main.storyboard */,
 				BDB7CC8B22958E9500D4060C /* Assets.xcassets */,
 				BDB7CC8D22958E9500D4060C /* LaunchScreen.storyboard */,
@@ -123,6 +138,25 @@
 				BDB7CCA622958E9500D4060C /* Info.plist */,
 			);
 			path = StateMachineTestUITests;
+			sourceTree = "<group>";
+		};
+		BDB7CCBE2295E56200D4060C /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				BDB7CCB422958F5700D4060C /* NetworkDataSource.swift */,
+				BDB7CCBC2295E34000D4060C /* LoadableDataSource.swift */,
+				BDB7CCBA2295E31900D4060C /* DataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BDB7CCBF2295E57300D4060C /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				BDB7CCB222958EB500D4060C /* StateMachine.swift */,
+				BDB7CCC22296F16F00D4060C /* NetworkingDataSourceObserver.swift */,
+			);
+			path = StateMachine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB7CCC32296F16F00D4060C /* NetworkingDataSourceObserver.swift in Sources */,
+				BDB7CCBB2295E31900D4060C /* DataSource.swift in Sources */,
+				BDB7CCB72295928E00D4060C /* ViewModel.swift in Sources */,
+				BDB7CCBD2295E34000D4060C /* LoadableDataSource.swift in Sources */,
 				BDB7CC8722958E9400D4060C /* ViewController.swift in Sources */,
+				BDB7CCB322958EB500D4060C /* StateMachine.swift in Sources */,
+				BDB7CCB522958F5700D4060C /* NetworkDataSource.swift in Sources */,
 				BDB7CC8522958E9400D4060C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,12 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let viewModel = NetworkingViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setUpViewModel()
     }
+    
+    func setUpViewModel() {
+        viewModel.delegate = self
+        viewModel.refresh()
+    }
+}
 
-
+extension ViewController: ViewModelDisplayDelegate {
+    func displayData() {
+        
+    }
+    
+    func displayEmpty() {
+        
+    }
+    
+    func displayError() {
+        
+    }
 }
 
